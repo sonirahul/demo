@@ -9,12 +9,4 @@ public class User {
 
     private String firstName;
     private String lastName;
-    @NotNull
-    private String school = null;
-
-    @NotNull
-    private String indirectMix() {
-        String mix = null;
-        return mix;
-    }
 }
