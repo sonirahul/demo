@@ -12,7 +12,7 @@ public class User {
     @NotNull
     private String school = null;
 
-    @Nonnull
+    @NotNull
     public String indirectMix() {
         String mix = null;
         return mix;  // Noncompliant; return value is Nonnull, but null is returned.}}
