@@ -27,7 +27,6 @@ public class DemoApplication {
 		user.setLastName("Soni");
 		log.debug(user.toString());
 		System.out.println(user.toString());
-
 		return username + " " + user.toString();
 	}
 }
