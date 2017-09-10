@@ -11,17 +11,27 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 @RestController
 @Slf4j
+/**
+ * boot starting the application
+ */
 public class DemoApplication {
 
 	@Value("${username}")
 	private String username;
 
+    /**
+     * main method
+     * @param args
+     */
 	public static void main(final String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
 	}
 
 	@RequestMapping("/")
-	public String testMethod() {
+    /**
+     * test method
+     */
+	public final String testMethod() {
 		User user = new User();
 		user.setFirstName("Rahul");
 		user.setLastName("Soni");
