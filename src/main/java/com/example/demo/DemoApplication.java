@@ -26,21 +26,21 @@ public class DemoApplication {
      * main method.
      * @param args arguments
      */
-	public static void main(final String[] args) {
-		SpringApplication.run(DemoApplication.class, args);
-	}
+    public static void main(final String[] args) {
+        SpringApplication.run(DemoApplication.class, args);
+    }
 
 
     /**
      * test method.
      * @return String returns data back
      */
-	@RequestMapping("/")
-	public final String testMethod() {
-		User user = new User();
-		user.setFirstName("Rahul");
-		user.setLastName("Soni");
-		log.debug(user.toString());
-		return username + " " + user.toString();
-	}
+    @RequestMapping("/")
+    public final String testMethod() {
+        User user = new User();
+        user.setFirstName("Rahul");
+        user.setLastName("Soni");
+        log.debug(user.toString());
+        return username + " " + user.toString();
+    }
 }
