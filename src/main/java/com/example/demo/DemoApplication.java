@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * boot starting the application
+ * boot starting the application.
  */
 @SpringBootApplication
 @RestController
@@ -20,7 +20,7 @@ public class DemoApplication {
 	private String username;
 
     /**
-     * main method
+     * main method.
      * @param args arguments
      */
 	public static void main(final String[] args) {
@@ -29,7 +29,8 @@ public class DemoApplication {
 
 
     /**
-     * test method
+     * test method.
+     * @return String returns data back
      */
 	@RequestMapping("/")
 	public final String testMethod() {
