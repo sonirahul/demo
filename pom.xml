@@ -59,7 +59,7 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
-			<plugin>
+			<!--<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-checkstyle-plugin</artifactId>
 				<executions>
@@ -79,7 +79,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-pmd-plugin</artifactId>
-				<!--<version>3.6</version>-->
+				&lt;!&ndash;<version>3.6</version>&ndash;&gt;
 				<configuration>
 					<sourceEncoding>utf-8</sourceEncoding>
 					<minimumTokens>20</minimumTokens>
@@ -114,7 +114,7 @@
 					<xmlOutput>true</xmlOutput>
 					<failOnError>false</failOnError>
 				</configuration>
-			</plugin>
+			</plugin>-->
 		</plugins>
 	</build>
 
