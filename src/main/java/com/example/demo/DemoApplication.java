@@ -20,7 +20,7 @@ public class DemoApplication {
      * user name.
      */
     @Value("${username}")
-	private String username;
+    private String username;
 
     /**
      * main method.
