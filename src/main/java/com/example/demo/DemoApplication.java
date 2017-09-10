@@ -8,12 +8,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@SpringBootApplication
-@RestController
-@Slf4j
 /**
  * boot starting the application
  */
+@SpringBootApplication
+@RestController
+@Slf4j
 public class DemoApplication {
 
 	@Value("${username}")
@@ -21,16 +21,17 @@ public class DemoApplication {
 
     /**
      * main method
-     * @param args
+     * @param args arguments
      */
 	public static void main(final String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
 	}
 
-	@RequestMapping("/")
+
     /**
      * test method
      */
+	@RequestMapping("/")
 	public final String testMethod() {
 		User user = new User();
 		user.setFirstName("Rahul");
